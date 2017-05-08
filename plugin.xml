@@ -26,6 +26,10 @@
       <feature name="DBMeter">
         <param name="ios-package" value="DBMeter" />
       </feature>
+      <preference name="MICROPHONE_USAGE_DESCRIPTION" default="This app needs microphone access"/>
+      <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+          <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+      </config-file>
     </config-file>
 
     <source-file src="src/ios/DBMeter.swift" />
